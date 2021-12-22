@@ -118,7 +118,7 @@
 
             /* Title */
 
-            color: #111111;
+            color: #222222;
 
 
             /* Inside Auto Layout */
@@ -445,6 +445,22 @@
             flex-grow: 0;
             margin: 0px 12px;
         }
+
+        .submenu{
+            display: none;
+            position: absolute;
+            background: #ffffff;
+        }
+
+        #nav li:hover .submenu{
+            display: flow-root;
+            background: #FFFFFF;
+            /* Drop */
+
+            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+            border-radius: 0px 0px 8px 8px;
+        }
+
     </style>
 </head>
 
@@ -455,7 +471,7 @@
             <ul id="nav" class="nav">
                 <li id="home"><a href="">TRANG CHỦ</a></li>
                 <li id="food" class="dropdown">
-                    <div class="link"><i class="fa fa-code"></i>MÓN ĂN<i class="fa fa-chevron-down"></i></div>
+                    <div class="link"><i class="fa fa-code"></i>MÓN NGON<i class="fa fa-chevron-down"></i></div>
                     <ul class="submenu">
                         <li>Món lẻ</li>
                         <li>Món mới: Ngon hơn mỗi ngày</li>
