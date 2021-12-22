@@ -54,6 +54,21 @@
             top: 25px;
         }
 
+        .nav li.open .link {
+            color: #b63b4d;
+        }
+
+        .nav li.open i {
+            color: #b63b4d;
+        }
+
+        .nav li.open i.fa-chevron-down {
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
         /*trang-chu*/
         #home {
             position: static;
@@ -226,9 +241,9 @@
             font-size: 16px;
             line-height: 150%;
             color: #AAAAAA;
-        } */ 
+        } */
 
-        #myInput{
+        #myInput {
             float: right;
             padding: 6px;
             margin-top: 20px;
@@ -248,9 +263,12 @@
             /* identical to box height, or 24px */
             color: #AAAAAA;
 
-            background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-            background-position: 10px 12px; /* Position the search icon */
-            background-repeat: no-repeat; /* Do not repeat the icon image */
+            background-image: url('/css/searchicon.png');
+            /* Add a search icon to input */
+            background-position: 10px 12px;
+            /* Position the search icon */
+            background-repeat: no-repeat;
+            /* Do not repeat the icon image */
         }
 
 
@@ -288,7 +306,7 @@
             text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25), 0px 0px 12px #7C6100;
         }
 
-        #shoppingcart{
+        #shoppingcart {
             left: 93.91%;
             right: 4.84%;
             top: 36.36%;
@@ -316,6 +334,117 @@
 
             text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
         }
+
+
+        .submenu {
+            display: none;
+            background: #444359;
+            font-size: 14px;
+        }
+
+        .submenu li {
+            border-bottom: 1px solid #4b4a5e;
+        }
+
+        .submenu a {
+            display: block;
+            text-decoration: none;
+            color: #d9d9d9;
+            padding: 12px;
+            padding-left: 42px;
+            -webkit-transition: all 0.25s ease;
+            -o-transition: all 0.25s ease;
+            transition: all 0.25s ease;
+        }
+
+        .submenu a:hover {
+            background: #b63b4d;
+            color: #FFF;
+        }
+
+        #frame13 {
+            position: absolute;
+            width: 175px;
+            height: 355px;
+            left: 0px;
+            top: 0px;
+            opacity: 2;
+
+        }
+
+        #frame4 {
+            /* Auto Layout */
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+
+            position: absolute;
+            width: 124px;
+            height: 24px;
+            right: 0px;
+            top: 10px;
+            opacity: 2;
+        }
+
+        #mon-moi {
+            position: absolute;
+            width: 1100px;
+            height: 442px;
+            left: 230px;
+            top: 510px;
+
+            /* Main-Gold */
+
+            background: #CDA922;
+            border-radius: 8px;
+        }
+
+        #new {
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            left: 0px;
+            top: 10px;
+
+
+            /* Inside Auto Layout */
+
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+            margin: 0px 12px;
+        }
+
+        h2 {
+            position: absolute;
+            width: 122px;
+            height: 42px;
+            left: 48px;
+            top: 0px;
+
+            font-family: Be Vietnam;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 28px;
+            line-height: 150%;
+            /* identical to box height, or 42px */
+
+            text-transform: uppercase;
+
+            /* White */
+
+            color: #FFFFFF;
+
+
+            /* Inside Auto Layout */
+
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            margin: 0px 12px;
+        }
     </style>
 </head>
 
@@ -323,9 +452,21 @@
     <div id="main">
         <div id="header">
             <img src="images/logo.png" id="logo" alt="">
-            <ul id="nav">
+            <ul id="nav" class="nav">
                 <li id="home"><a href="">TRANG CHỦ</a></li>
-                <li id="food"><a href="">MÓN ĂN</a></li>
+                <li id="food" class="dropdown">
+                    <div class="link"><i class="fa fa-code"></i>MÓN ĂN<i class="fa fa-chevron-down"></i></div>
+                    <ul class="submenu">
+                        <li>Món lẻ</li>
+                        <li>Món mới: Ngon hơn mỗi ngày</li>
+                        <li>Món được ưa chuộng</li>
+                        <li>Các món khai vị</li>
+                        <li>Các món gỏi</li>
+                        <li>Các món cá - tôm</li>
+                        <li>Các món bò - dê - heo</li>
+                        <li>Các món gà</li>
+                    </ul>
+                </li>
                 <li id="service"><a href="">DỊCH VỤ TIỆC</a></li>
                 <li id="news"><a href="">TIN TỨC</a></li>
                 <li id="contact"><a href="">LIÊN HỆ</a></li>
@@ -345,6 +486,47 @@
         <button type="submit"></button>
     </div>
 
+    <div id="mon-moi">
+        <img src="images/Frame 13.png" id="frame13" alt="">
+        <img src="images/new 1.png" id="new" alt="">
+        <h2>MÓN MỚI</h2>
+        <img src="images/Frame 4.png" id="frame4" alt="">
+    </div>
+
 </body>
 
 </html>
+
+
+
+
+
+
+<script>
+    $(function () {
+        var Accordion = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Accordion.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+                $next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+            };
+        }
+
+        var accordion = new Accordion($('#accordion'), false);
+    });
+</script>
