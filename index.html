@@ -8,460 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Charmonman' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Be Vietnam' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: sans-serif;
-            color: #333;
-        }
-
-        header {
-            position: absolute;
-            width: 1920px;
-            height: 88px;
-            left: 0px;
-            top: 0px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        #logo {
-            position: absolute;
-            width: 130px;
-            height: 52px;
-            left: 80px;
-            top: 20px;
-        }
-
-        #nav {
-            /* Frame */
-            /* Auto Layout */
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-
-            position: absolute;
-            width: 662px;
-            height: 27px;
-            left: 274px;
-            top: 25px;
-        }
-
-        .nav li.open .link {
-            color: #b63b4d;
-        }
-
-        .nav li.open i {
-            color: #b63b4d;
-        }
-
-        .nav li.open i.fa-chevron-down {
-            -webkit-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
-
-        /*trang-chu*/
-        #home {
-            position: static;
-            width: 100px;
-            height: 27px;
-            left: 0px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 150%;
-            /* identical to box height, or 27px */
-
-            text-transform: uppercase;
-
-            /* Main-Gold */
-
-            color: #CDA922;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-            margin: 0px 40px;
-        }
-
-        /* Món ngon */
-        #food {
-            position: static;
-            width: 97px;
-            height: 27px;
-            left: 0px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 150%;
-            /* identical to box height, or 27px */
-
-            text-transform: uppercase;
-
-            /* Title */
-
-            color: #222222;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-        }
-
-        /* Dịch vụ tiệc */
-        #service {
-            position: static;
-            width: 113px;
-            height: 27px;
-            left: 0px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 150%;
-            /* identical to box height, or 27px */
-
-            text-transform: uppercase;
-
-            /* Title */
-
-            color: #111111;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-            margin: 0px 4px;
-        }
-
-        /*tin tuc*/
-        #news {
-            position: static;
-            width: 68px;
-            height: 27px;
-            left: 100px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 150%;
-            /* identical to box height, or 27px */
-
-            text-transform: uppercase;
-
-            /* Title */
-
-            color: #111111;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-            margin: 0px 4px;
-        }
-
-        /*lien he*/
-        #contact {
-            position: static;
-            width: 64px;
-            height: 27px;
-            left: 598px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 150%;
-            /* identical to box height, or 27px */
-
-            text-transform: uppercase;
-
-            /* Title */
-
-            color: #111111;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 0;
-            flex-grow: 0;
-            margin: 0px 4px;
-        }
-
-        ul,
-        ol {
-            list-style: none;
-        }
-
-        /* .topnav input[type=text] {
-            float: right;
-            padding: 6px;
-            margin-top: 20px;
-            margin-right: 150px;
-            font-size: 17px;
-
-            background: #FFFFFF;
-            border: 1px solid #DEDEDE;
-            box-sizing: border-box;
-            border-radius: 40px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 150%;
-            color: #AAAAAA;
-        } */
-
-        #myInput {
-            float: right;
-            padding: 6px;
-            margin-top: 20px;
-            margin-right: 150px;
-            font-size: 17px;
-
-            background: #FFFFFF;
-            border: 1px solid #DEDEDE;
-            box-sizing: border-box;
-            border-radius: 40px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 150%;
-            /* identical to box height, or 24px */
-            color: #AAAAAA;
-
-            background-image: url('/css/searchicon.png');
-            /* Add a search icon to input */
-            background-position: 10px 12px;
-            /* Position the search icon */
-            background-repeat: no-repeat;
-            /* Do not repeat the icon image */
-        }
-
-
-
-        #image1 {
-            position: absolute;
-            width: 1535px;
-            height: 600px;
-            left: 0px;
-            top: 87px;
-
-            background: rgba(170, 170, 170, 0.856);
-            mix-blend-mode: multiply;
-        }
-
-        h3 {
-            position: absolute;
-            width: 800px;
-            height: 96px;
-            left: 370px;
-            top: 240px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 50px;
-            line-height: 150%;
-
-
-            text-align: center;
-
-            color: #DEB722;
-
-            /* border: 1px solid #EDD173; */
-            text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25), 0px 0px 12px #7C6100;
-        }
-
-        #shoppingcart {
-            left: 93.91%;
-            right: 4.84%;
-            top: 36.36%;
-            bottom: 36.36%;
-        }
-
-        h4 {
-            position: absolute;
-            width: 700px;
-            height: 144px;
-            left: 420px;
-            top: 300px;
-
-            font-family: Charmonman;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 45px;
-            line-height: 140%;
-            /* identical to box height, or 144px */
-
-            text-align: center;
-            letter-spacing: 0.01em;
-
-            color: #FFF9BE;
-
-            text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-        }
-
-
-        .submenu {
-            display: none;
-            background: #444359;
-            font-size: 14px;
-        }
-
-        .submenu li {
-            border-bottom: 1px solid #4b4a5e;
-        }
-
-        .submenu a {
-            display: block;
-            text-decoration: none;
-            color: #d9d9d9;
-            padding: 12px;
-            padding-left: 42px;
-            -webkit-transition: all 0.25s ease;
-            -o-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-        }
-
-        .submenu a:hover {
-            background: #b63b4d;
-            color: #FFF;
-        }
-
-        #frame13 {
-            position: absolute;
-            width: 175px;
-            height: 355px;
-            left: 0px;
-            top: 0px;
-            opacity: 2;
-
-        }
-
-        #frame4 {
-            /* Auto Layout */
-
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 0px;
-
-            position: absolute;
-            width: 124px;
-            height: 24px;
-            right: 0px;
-            top: 10px;
-            opacity: 2;
-        }
-
-        #mon-moi {
-            position: absolute;
-            width: 1100px;
-            height: 442px;
-            left: 230px;
-            top: 510px;
-
-            /* Main-Gold */
-
-            background: #CDA922;
-            border-radius: 8px;
-        }
-
-        #new {
-            position: absolute;
-            width: 36px;
-            height: 36px;
-            left: 0px;
-            top: 10px;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 1;
-            flex-grow: 0;
-            margin: 0px 12px;
-        }
-
-        h2 {
-            position: absolute;
-            width: 122px;
-            height: 42px;
-            left: 48px;
-            top: 0px;
-
-            font-family: Be Vietnam;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 28px;
-            line-height: 150%;
-            /* identical to box height, or 42px */
-
-            text-transform: uppercase;
-
-            /* White */
-
-            color: #FFFFFF;
-
-
-            /* Inside Auto Layout */
-
-            flex: none;
-            order: 2;
-            flex-grow: 0;
-            margin: 0px 12px;
-        }
-
-        .submenu{
-            display: none;
-            position: absolute;
-            background: #ffffff;
-        }
-
-        #nav li:hover .submenu{
-            display: flow-root;
-            background: #FFFFFF;
-            /* Drop */
-
-            box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
-            border-radius: 0px 0px 8px 8px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -507,12 +54,206 @@
         <img src="images/new 1.png" id="new" alt="">
         <h2>MÓN MỚI</h2>
         <img src="images/Frame 4.png" id="frame4" alt="">
+        <hr id="line-1">
+        <div id="frame-bo-luc-lac">
+            <img class="bo-luc-lac-img" src="images/bo-luc-lac.png" alt="">
 
-        <div id="ga-hap">
-            abc
+            <div id="context-bo-luc-lac">
+                <span><a href="#" id="bo-luc-lac-text">Bò lúc lắc sốt tomyum và thêm rau củ</a></span>
+
+                <div id="price">
+                    <div>
+                        <img id="price-s" src="images/price-s.PNG">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img id="price-l" src="images/price-l.PNG">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="frame-ca-bong-mu">
+            <img class="ca-bong-mu-image" src="images/ca-bong-mu.png" alt="">
+
+
+            <div id="context-ca-bong-mu">
+                <div>
+                    <span><a href="#" class="ca-bong-mu-text">Cá bóng mú sốt chanh dây</a></span>
+                </div>
+                <div class="price3">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-m.PNG" id="price-s" alt="">
+                        <span id="price-text">250.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-ca-chep">
+            <img class="ca-chep-img" src="images/ca-chep-hap.png" alt="">
+
+
+            <div id="context-ca-chep">
+                <div>
+                    <span><a href="#" class="ca-chep-text">Cá chép hấp hồng kong</a></span>
+                </div>
+                <div class="price3">
+                    <div>
+                        <img src="images/price-m.PNG" id="price-s" alt="">
+                        <span id="price-text">250.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="frame-cha-muc">
+            <img class="cha-muc-img" src="images/cha-muc-ha-long.png" alt="">
+            <div id="context-cha-muc">
+                <div>
+                    <span><a href="#" class="cha-muc-text">Chả mực hạ long</a></span>
+                </div>
+                <div class="price3">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-m.PNG" id="price-s" alt="">
+                        <span id="price-text">250.000 đ</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
+
+    <div id="frame-mon-duoc-yeu-thich">
+        <ul>
+            <img src="images/fire 1.png" class="fire-icon" alt="">
+            <li>
+                <h3 class="mon-yeu-thich">Món được yêu thích</h3>
+            </li>
+        </ul>
+
+        <hr id="line-2">
+
+        <div id="frame-com-chien-hai-san">
+            <img src="images/com-chien-hai-san.png" class="com-chien-hai-san-img" alt="">
+
+            <div id="context-com-chien-hai-san">
+                <span><a href="#" class="com-chien-hai-san-text">Cơm chiên hải sản</a></span>
+                <div id="price2">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-m.PNG" id="price-s" alt="">
+                        <span id="price-text">250.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="frame-ga-bo-xoi">
+            <img src="images/ga-bo-xoi.png" class="ga-bo-img" alt="">
+
+            <div id="context-ga-bo-xoi">
+                <span><a href="#" class="text7">Gà bó xôi sốt chua ngọt</a></span>
+                <div id="price2">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-ga-nuong-lu">
+            <img src="images/ga-nuong-lu.png" class="ga-nuong-lu-img" alt="">
+
+            <div id="context-ga-nuong-lu">
+                <span><a href="#" class="text7">Gà nướng lu kèm khoai tây</a></span>
+                <div id="price2">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-m.PNG" id="price-s" alt="">
+                        <span id="price-text">250.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-com-chien-duong-chau">
+            <img src="images/com-chien-duong-chau.png" class="com-chien-duong-chau-img" alt="">
+
+            <div id="context-com-chien-duong-chau">
+                <span><a href="#" class="text7">Cơm chiên dương châu</a></span>
+                <div id="price2">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="frame-ga-tiem-rau-cu">
+            <img src="images/ga-tiem-rau-cu.png" class="ga-tiem-rau-cu-img" alt="">
+
+            <div id="context-ga-tiem-rau-cu">
+                <span><a href="#" class="text7">Gà tiềm rau củ</a></span>
+                <div id="price2">
+                    <div>
+                        <img src="images/price-s.PNG" id="price-s" alt="">
+                        <span id="price-text">100.000 đ</span>
+                    </div>
+                    <div>
+                        <img src="images/price-l.PNG" id="price-s" alt="">
+                        <span id="price-text">500.000 đ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 </body>
 
