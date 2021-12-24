@@ -1795,12 +1795,32 @@ h2 {
     color: #CDA922;
 }
 
+#frame-video-demo{
+    position: absolute;
+    width: 1920px;
+    height: 227px;
+    left: 0px;
+    top: 3410px;
+
+    background: #111111;
+}
+
+#frame-dia-chi{
+    position: absolute;
+    width: 1920px;
+    height: 310px;
+    left: 0px;
+    top: 3620px;
+
+    background: #262626;
+}
+
 #frame-copy{
     position: absolute;
     width: 1920px;
     height: 69px;
     left: 0px;
-    top: 3500px;
+    top: 3930px;
 
     background: #000000;
 }
