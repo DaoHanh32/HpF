@@ -295,10 +295,12 @@ h3 {
     text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25), 0px 0px 12px #7C6100;
 }
 
-#shoppingcart {
+.cart-icon{
+    height: 1.3em;
+    position: absolute;
     left: 93.91%;
     right: 4.84%;
-    top: 36.36%;
+    top: 30px;
     bottom: 36.36%;
 }
 
@@ -372,8 +374,8 @@ h4 {
     position: absolute;
     width: 124px;
     height: 24px;
-    right: 0px;
-    top: 10px;
+    right: 20px;
+    top: 20px;
     opacity: 2;
 }
 
@@ -395,7 +397,7 @@ h4 {
     width: 36px;
     height: 36px;
     left: 0px;
-    top: 10px;
+    top: 20px;
 
 
     /* Inside Auto Layout */
@@ -411,7 +413,7 @@ h2 {
     width: 122px;
     height: 42px;
     left: 48px;
-    top: 0px;
+    top: 15px;
 
     font-family: Be Vietnam;
     font-style: normal;
@@ -918,7 +920,7 @@ h2 {
     width: 40px;
     height: 40px;
     left: 0px;
-    top: 25px;
+    top: 10px;
 
 
     /* Inside Auto Layout */
@@ -934,7 +936,7 @@ h2 {
     width: 296px;
     height: 42px;
     left: 48px;
-    top: 25px;
+    top: 10px;
 
     font-family: Be Vietnam;
     font-style: normal;
@@ -1295,51 +1297,6 @@ h2 {
     border-radius: 8px;
 }
 
-.fire-icon {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 0px;
-    top: 25px;
-
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0px 12px;
-}
-
-.mon-yeu-thich {
-    position: absolute;
-    width: 296px;
-    height: 42px;
-    left: 48px;
-    top: 25px;
-
-    font-family: Be Vietnam;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 150%;
-    /* identical to box height, or 42px */
-
-    text-transform: uppercase;
-
-    /* Title */
-
-    color: #111111;
-
-
-    /* Inside Auto Layout */
-
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    margin: 0px 12px;
-    display: inline-block;
-}
 #dinner1{
     position: absolute;
     left: 10px;
@@ -1472,4 +1429,399 @@ h2 {
     border: 2px solid #CDA922;
     box-sizing: border-box;
     border-radius: 8px;
+}
+
+#frame-dich-vu-noi-bat{
+    position: absolute;
+    width: 1535px;
+    height: 718px;
+    left: 0px;
+    top: 2700px;
+
+    background: linear-gradient(248.92deg, #4E3D01 0%, #2D260E 101.05%);
+}
+#frame75{
+    position: absolute;
+    width: 24px;
+    height: 60px;
+    left: 750px;
+    top: 0px;
+}
+.dich-vu-noi-bat{
+    position: absolute;
+    width: 300px;
+    height: 54px;
+    left: 620px;
+    top: 60px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    /* identical to box height, or 54px */
+
+    text-transform: uppercase;
+
+    /* Main-Gold */
+
+    color: #CDA922;
+}
+
+#frame-thiet-ke-tiec-cuoi{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    filter: drop-shadow(0px 0px 36px rgba(0, 0, 0, 0.25));
+    border-radius: 8px;
+}
+#thiet-ke-tiec-img{
+    position: absolute;
+    left: 140px;
+    top: 150px;
+
+   /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%); */
+    border-radius: 8px;
+}
+
+.thiet-ke-text{
+    position: absolute;
+    height: 34px;
+    left: 180px;
+    top: 400px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF; 
+    }
+
+.detail-thiet-ke-thiep{
+    position: absolute;
+    width: 210px;
+    height: 63px;
+    left: 180px;
+    bottom: 210px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 150%;
+    /* or 21px */
+
+
+    color: #FFFFFF;
+}
+
+#frame-xct1{
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    left: 180px;
+    top: 540px;
+    
+    border: 1px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+    .xct1{
+    position: absolute;
+    height: 21px;
+    width: 100px;
+    left: 15.6%;
+    right: 56.03%;
+    bottom: 31px;
+    top: 4px;
+    
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Main-Gold */
+    
+    color: #CDA922;
+    }
+
+
+#ban-gallery-img{
+    position: absolute;
+    left: 480px;
+    top: 150px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%);
+    border-radius: 8px;
+}
+
+.ban-galley-text{
+    position: absolute;
+    height: 34px;
+    left: 500px;
+    top: 400px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF; 
+    }
+
+.detail-ban-gallery{
+    position: absolute;
+    width: 220px;
+    height: 63px;
+    left: 500px;
+    bottom: 210px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 150%;
+    /* or 21px */
+
+
+    color: #FFFFFF;
+}
+
+#frame-xct2{
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    left: 500px;
+    top: 540px;
+    
+    border: 1px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+.xct1{
+    position: absolute;
+    height: 21px;
+    width: 100px;
+    left: 15.6%;
+    right: 56.03%;
+    bottom: 31px;
+    top: 4px;
+    
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Main-Gold */
+    
+    color: #CDA922;
+}
+
+#trang-tri-img{
+    position: absolute;
+    left: 820px;
+    top: 150px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%);
+    border-radius: 8px;
+}
+
+.trang-tri-text{
+    position: absolute;
+    height: 34px;
+    left: 840px;
+    top: 400px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF; 
+    }
+
+.detail-trang-tri{
+    position: absolute;
+    width: 220px;
+    height: 63px;
+    left: 840px;
+    bottom: 210px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 150%;
+    /* or 21px */
+
+
+    color: #FFFFFF;
+}
+
+#frame-xct3{
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    left: 840px;
+    top: 540px;
+    
+    border: 1px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+.xct1{
+    position: absolute;
+    height: 21px;
+    width: 100px;
+    left: 15.6%;
+    right: 56.03%;
+    bottom: 31px;
+    top: 4px;
+    
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Main-Gold */
+    
+    color: #CDA922;
+}
+
+#chup-anh-img{
+    position: absolute;
+    left: 1160px;
+    top: 150px;
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.06%, rgba(0, 0, 0, 0.9) 67.71%);
+    border-radius: 8px;
+}
+
+
+.chup-anh-text{
+    position: absolute;
+    height: 34px;
+    left: 1180px;
+    top: 400px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-transform: uppercase;
+
+    color: #FFFFFF; 
+    }
+
+.detail-chup-anh{
+    position: absolute;
+    width: 240px;
+    height: 63px;
+    left: 1180px;
+    bottom: 210px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5px;
+    line-height: 150%;
+    /* or 21px */
+
+
+    color: #FFFFFF;
+}
+
+#frame-xct4{
+    position: absolute;
+    width: 120px;
+    height: 32px;
+    left: 1180px;
+    top: 540px;
+    
+    border: 1px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 4px;
+    }
+    
+.xct1{
+    position: absolute;
+    height: 21px;
+    width: 100px;
+    left: 15.6%;
+    right: 56.03%;
+    bottom: 31px;
+    top: 4px;
+    
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+    
+    
+    /* Main-Gold */
+    
+    color: #CDA922;
+}
+
+#frame-copy{
+    position: absolute;
+    width: 1920px;
+    height: 69px;
+    left: 0px;
+    top: 3500px;
+
+    background: #000000;
+}
+
+.copyright{
+    position: absolute;
+    width: 321px;
+    height: 21px;
+    left: 659px;
+    top: 25.5px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+    text-align: center;
+
+    color: #ffffff;
+
+    opacity: 0.7;
 }
