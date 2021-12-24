@@ -357,7 +357,7 @@ h4 {
     height: 355px;
     left: 0px;
     top: 0px;
-    opacity: 2;
+    opacity: 10;
 
 }
 
@@ -896,16 +896,16 @@ h2 {
     margin: 8px 0px;
 }
 
-
+/* mon-duoc-yeu-thich */
 
 #frame-mon-duoc-yeu-thich {
     position: absolute;
     width: 1100px;
     height: 428px;
     left: 230px;
-    top: 1058px;
+    top: 999px;
 
-    background: #d1cfcf;
+    background: #ffffff;
     /* Main-Gold */
 
     border: 2px solid #CDA922;
@@ -1002,7 +1002,7 @@ h2 {
     height: 108px;
     left: 17px;
     right: 12px;
-    top: 250px;
+    top: 150px;
 }
 
 .com-chien-hai-san-img {
@@ -1046,11 +1046,11 @@ h2 {
 }
 
 #frame-ga-bo-xoi {
-    position: static;
-    width: 218px;
+    position: absolute;
+    width: 200px;
     height: 298px;
-    left: 234px;
-    top: 0px;
+    left: 215px;
+    top: 90px;
 
 
     /* Inside Auto Layout */
@@ -1059,14 +1059,19 @@ h2 {
     order: 1;
     flex-grow: 0;
     margin: 0px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .ga-bo-img {
     position: absolute;
+    width: 200px;
     height: 145px;
-    left: 21%;
+    left: 0px;
     right: 0%;
-    top: 89px;
+    top: 0px;
 
     border-radius: 8px 8px 0px 0px;
 }
@@ -1110,18 +1115,18 @@ h2 {
 
     position: absolute;
     height: 106px;
-    left: 255px;
+    left: 20px;
     right: 12px;
-    top: 250px;
+    top: 150px;
 }
 
 
 #frame-ga-nuong-lu {
-    position: static;
-    width: 218px;
+    position: absolute;
+    width: 200px;
     height: 298px;
-    left: 468px;
-    top: 0px;
+    left: 430px;
+    top: 90px;
 
 
     /* Inside Auto Layout */
@@ -1130,14 +1135,18 @@ h2 {
     order: 2;
     flex-grow: 0;
     margin: 0px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .ga-nuong-lu-img {
     position: absolute;
+    width: 200px;
     height: 145px;
-    left: 40.7%;
-    right: 0%;
-    top: 90px;
+    left: 0px;
+    top: 0px;
 
     border-radius: 8px 8px 0px 0px;
 }
@@ -1150,17 +1159,16 @@ h2 {
 
     position: absolute;
     height: 133px;
-    left: 490px;
-    right: 12px;
-    top: 250px;
+    left: 20px;
+    top: 150px;
 }
 
 #frame-com-chien-duong-chau {
-    position: static;
-    width: 218px;
+    position: absolute;
+    width: 200px;
     height: 298px;
-    left: 468px;
-    top: 0px;
+    left: 645px;
+    top: 90px;
 
 
     /* Inside Auto Layout */
@@ -1169,14 +1177,18 @@ h2 {
     order: 2;
     flex-grow: 0;
     margin: 0px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .com-chien-duong-chau-img {
     position: absolute;
+    width: 200px;
     height: 145px;
-    left: 60.5%;
-    right: 0%;
-    top: 90px;
+    left: 0%;
+    top: 0px;
 
     border-radius: 8px 8px 0px 0px;
 }
@@ -1189,17 +1201,16 @@ h2 {
 
     position: absolute;
     height: 106px;
-    left: 730px;
-    right: 12px;
-    top: 250px;
+    left: 20px;
+    top: 160px;
 }
 
 #frame-ga-tiem-rau-cu {
-    position: static;
-    width: 217px;
+    position: absolute;
+    width: 200px;
     height: 298px;
-    left: 935px;
-    top: 0px;
+    left: 865px;
+    top: 90px;
 
 
     /* Inside Auto Layout */
@@ -1208,14 +1219,18 @@ h2 {
     order: 4;
     flex-grow: 0;
     margin: 0px 16px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .ga-tiem-rau-cu-img {
     position: absolute;
+    width: 200px;
     height: 145px;
-    left: 80%;
-    right: 0%;
-    top: 90px;
+    left: 0%;
+    top: 0px;
 
 
     border-radius: 8px 8px 0px 0px;
@@ -1231,7 +1246,230 @@ h2 {
 
     position: absolute;
     height: 81px;
-    left: 956px;
-    right: 12px;
-    top: 250px;
+    left: 20px;
+    top: 165px;
+}
+#sale-10{
+    position: absolute;
+    width: 588px;
+    height: 223px;
+    left: 230px;
+    top: 1470px;
+
+    background: url(image.png);
+    border-radius: 8px;
+}
+#sale-gio-vang{
+    position: absolute;
+    width: 588px;
+    height: 223px;
+    left: 800px;
+    top: 1470px;
+
+    background: url(image.png);
+    border-radius: 8px;
+}
+#hinh-19{
+    position: absolute;
+    width: 530px;
+    height: 230px;
+}
+#hinh-20{
+    position: absolute;
+    width: 530px;
+    height: 230px;
+}
+
+#frame-mon-khai-vi{
+    position: absolute;
+    width: 1100px;
+    height: 428px;
+    left: 230px;
+    top: 1750px;
+
+    background: #ffffff;
+    /* Main-Gold */
+
+    border: 2px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.fire-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    top: 25px;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 12px;
+}
+
+.mon-yeu-thich {
+    position: absolute;
+    width: 296px;
+    height: 42px;
+    left: 48px;
+    top: 25px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 150%;
+    /* identical to box height, or 42px */
+
+    text-transform: uppercase;
+
+    /* Title */
+
+    color: #111111;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 12px;
+    display: inline-block;
+}
+#dinner1{
+    position: absolute;
+    left: 10px;
+    right: 83.18%;
+    top: 10px;
+    bottom: 7.14%;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 12px;
+}
+
+#frame5 {
+    /* Auto Layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 124px;
+    height: 24px;
+    right: 20px;
+    top: 20px;
+    opacity: 2;
+}
+
+.mon-khai-vi{
+    position: absolute;
+    width: 250px;
+    height: 42px;
+    left: 60px;
+    top: 10px;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 150%;
+    /* identical to box height, or 42px */
+
+    text-transform: uppercase;
+
+    /* White */
+
+    color: #000000;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 12px;
+}
+
+#khai-vi-3-mon-text {
+    position: static;
+    width: 252px;
+    left: calc(50% - 252px/2);
+    top: 0%;
+    bottom: 52.83%;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 140%;
+    /* or 25px */
+
+
+    /* Title */
+
+    color: #111111;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+.heo-quay-text {
+    position: static;
+    width: 252px;
+    left: calc(50% - 252px/2);
+    top: 0%;
+    bottom: 76.85%;
+
+    font-family: Be Vietnam;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 140%;
+    /* or 25px */
+
+
+    /* Title */
+
+    color: #111111;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 8px 0px;
+}
+
+#frame-mon-goi{
+    position: absolute;
+    width: 1100px;
+    height: 428px;
+    left: 230px;
+    top: 2220px;
+
+    background: #ffffff;
+    /* Main-Gold */
+
+    border: 2px solid #CDA922;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
